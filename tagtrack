@@ -1,0 +1,7 @@
+#!/bin/bash
+i=1
+for file in "$2"
+do
+    tag $1 $file track $i
+    let i++
+done

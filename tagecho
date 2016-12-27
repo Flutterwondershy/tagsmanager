@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ls $1 | ( 
+	while read file
+	do
+	    echo "Title:    "
+	    tag -r "$file" title
+	    echo "Artist:   "
+	    tag -r "$file" artist
+	    echo "Album:    "
+	    tag -r "$file" album
+	    echo "Comment:  "
+	    tag -r "$file" comment
+	    echo "Genre:    "
+	    tag -r "$file" genre
+	    echo "Year:	    "
+	    tag -r "$file" year
+	    echo "Track:    "
+	    tag -r "$file" track
+	    echo -e "\n"
+	done 
+    )

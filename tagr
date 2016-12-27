@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ls $2 | ( 
+	while read file
+	do
+	    tag $1 "$file" $3 $4
+	done 
+    )
