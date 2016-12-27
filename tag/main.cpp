@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 	char* value = "";
 
 
-	//Options optionnelle (mode lecture par défaut)
+	//Options optionnelles (mode lecture par défaut)
 	if(argc > arg)
 	{
 	    if(argv[arg][0] == '-')
